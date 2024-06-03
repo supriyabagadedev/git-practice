@@ -21,5 +21,6 @@ public class CreditAmountMailSender implements MailSender {
         if (amount.isEmpty()) {
             throw new InvalidAmountException("Amount cannot be empty");
         }
+        System.out.println("Amount cannot be empty");
     }
 }
