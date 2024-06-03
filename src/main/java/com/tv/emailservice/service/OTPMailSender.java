@@ -21,6 +21,5 @@ public class OTPMailSender implements MailSender {
         if (otp.isEmpty()) {
             throw new InvalidOTPException("OTP cannot be empty");
         }
-        System.out.println("OTP cannot be empty");
     }
 }
