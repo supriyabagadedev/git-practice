@@ -22,6 +22,7 @@ public class MailController {
     @ResponseStatus(HttpStatus.OK)
     public void sendMail(@RequestHeader(value = "REQUEST-TYPE") RequestType requestType,
                          @RequestBody @Valid MailRequest request) {
+        System.out.println("another change");
         mailService.sendMail(request, requestType);
         System.out.println("new change");
     }
