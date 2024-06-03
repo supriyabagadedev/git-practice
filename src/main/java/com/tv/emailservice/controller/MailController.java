@@ -24,6 +24,5 @@ public class MailController {
                          @RequestBody @Valid MailRequest request) {
         System.out.println("another change");
         mailService.sendMail(request, requestType);
-        System.out.println("new change");
     }
 }
