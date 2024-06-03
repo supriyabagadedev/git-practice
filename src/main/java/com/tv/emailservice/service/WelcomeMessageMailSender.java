@@ -10,5 +10,6 @@ public class WelcomeMessageMailSender implements MailSender {
     @Override
     public void sendMail(MailRequest request) {
         log.info("To: " + request.to() + "\nSubject: Welcome to new bank" + "\nBody: Dear user, welcome to NEO Bank");
+        System.out.println("welcome message");
     }
 }
