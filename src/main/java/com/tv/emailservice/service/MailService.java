@@ -17,6 +17,5 @@ public class MailService {
     public void sendMail(MailRequest request, RequestType requestType) {
         MailSender mailSender = mailSenderFactory.getMailSender(requestType);
         mailSender.sendMail(request);
-        System.out.println("email sent");
     }
 }
