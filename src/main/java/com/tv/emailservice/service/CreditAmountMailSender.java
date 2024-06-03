@@ -15,7 +15,6 @@ public class CreditAmountMailSender implements MailSender {
         verifyAmount(amount);
         log.info("To: " + request.to() + "\nSubject: Transaction Alert" + "\n Body: Amount " +
                  amount + " is credited to your account");
-        System.out.println("email sender");
     }
 
     private static void verifyAmount(String amount) {
