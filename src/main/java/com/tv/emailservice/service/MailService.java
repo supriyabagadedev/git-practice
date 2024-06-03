@@ -18,4 +18,9 @@ public class MailService {
         MailSender mailSender = mailSenderFactory.getMailSender(requestType);
         mailSender.sendMail(request);
     }
+
+    public void test(MailRequest request, RequestType requestType) {
+        MailSender mailSender = mailSenderFactory.getMailSender(requestType);
+        mailSender.sendMail(request);
+    }
 }
