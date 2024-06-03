@@ -22,6 +22,7 @@ public class MailService {
     public void test(MailRequest request, RequestType requestType) {
         MailSender mailSender = mailSenderFactory.getMailSender(requestType);
         log.info("conflicting changes");
+        System.out.println("conflict");
         mailSender.sendMail(request);
     }
 }
